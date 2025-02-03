@@ -11,35 +11,35 @@
 <body>
     <div class="grande">
         <div class="calcul">
-            <p></p>
-            <p></p>
+            <input id="champ" readonly></input>
         </div>
 
         <div class="tout">
-            <button class="orange">C</button>
-            <button><i class="bi bi-backspace orange"></i></button>
-            <button><i class="bi bi-percent"></i></button>
-            <button><i class="bi bi-slash-lg"></i></button>
+            <button class="orange" onclick="ajout('')">C</button>
+            <button><i class="bi bi-backspace orange" onclick="ajout('')"></i></button>
+            <button class="operation" onclick="ajout('/')">/</button>
+            <button class="operation" onclick="ajout('%')">%</button>
 
-            <button class="chiffre">1</button>
-            <button class="chiffre">2</button>
-            <button class="chiffre">3</button>
-            <button class="operation">x</button>
 
-            <button class="chiffre">4</button>
-            <button class="chiffre">5</button>
-            <button class="chiffre">6</button>
-            <button class="operation">-</button>
+            <button class="chiffre" onclick="ajout('7')">7</button>
+            <button class="chiffre"onclick="ajout('8')">8</button>
+            <button class="chiffre"onclick="ajout('9')">9</button>
+            <button class="operation" onclick="ajout('x')">x</button>
 
-            <button class="chiffre">7</button>
-            <button class="chiffre">8</button>
-            <button class="chiffre">9</button>
-            <button class="operation">+</button>
+            <button class="chiffre"onclick="ajout('4')">4</button>
+            <button class="chiffre"onclick="ajout('5')">5</button>
+            <button class="chiffre"onclick="ajout('6')">6</button>
+            <button class="operation" onclick="ajout('-')">-</button>
 
-            <button class="chiffre">00</button>
-            <button class="chiffre">0</button>
-            <button class="operation">.</button>
-            <button class="operation">=</button>
+            <button class="chiffre"onclick="ajout('1')">1</button>
+            <button class="chiffre"onclick="ajout('2')">2</button>
+            <button class="chiffre"onclick="ajout('3')">3</button>
+            <button class="operation" onclick="ajout('+')">+</button>
+
+            <button class="chiffre" onclick="ajout('00')">00</button>
+            <button class="chiffre" onclick="ajout('0')">0</button>
+            <button class="operation" onclick="ajout('.')">.</button>
+            <button class="operation" onclick="ajout('=')">=</button>
         </div>
     </div>
 

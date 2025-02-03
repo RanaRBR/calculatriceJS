@@ -11861,12 +11861,12 @@ body {
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   width: 600px;
-  margin-top: 5%;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
 .grande {
@@ -11895,8 +11895,33 @@ body {
   color: white;
 }
 
+.calcul {
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 20px;
+  text-align: right;
+  padding-right: 2%;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
 .orange {
   color: #e17e05;
+}
+
+#champ {
+  background-color: #eeaf85;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: right;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -11923,7 +11948,7 @@ button:active {
 
 @keyframes shadow-move {
   0% {
-    box-shadow: 0 4px 10px rgba(126, 105, 76, 0.5);
+    box-shadow: 0 4px 10px rgba(75, 69, 60, 0.5);
   }
   50% {
     box-shadow: 0 8px 20px rgba(81, 78, 76, 0.5);
