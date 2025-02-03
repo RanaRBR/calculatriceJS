@@ -11,35 +11,35 @@
 <body>
     <div class="grande">
         <div class="calcul">
-            <input id="champ" readonly></input>
+            <input id="calc-display" class="champ" readonly value="0"></input>
         </div>
 
         <div class="tout">
-            <button class="orange" onclick="suppression('')">C</button>
+            <button class="orange" onclick="clearDisplay()">C</button>
             <button><i class="bi bi-backspace orange" onclick="suppressionDernier('')"></i></button>
-            <button class="operation" onclick="ajout('/')">/</button>
-            <button class="operation" onclick="ajout('%')">%</button>
+            <button class="operation"onclick="setOperation('/')">/</button>
+            <button class="operation"onclick="setOperation('%')">%</button>
 
 
-            <button class="chiffre" onclick="ajout('7')">7</button>
-            <button class="chiffre"onclick="ajout('8')">8</button>
-            <button class="chiffre"onclick="ajout('9')">9</button>
-            <button class="operation" onclick="ajout('x')">x</button>
+            <button class="chiffre" onclick="appendNumber('7')">7</button>
+            <button class="chiffre"onclick="appendNumber('8')">8</button>
+            <button class="chiffre"onclick="appendNumber('9')">9</button>
+            <button class="operation"onclick="setOperation('x')">x</button>
 
-            <button class="chiffre"onclick="ajout('4')">4</button>
-            <button class="chiffre"onclick="ajout('5')">5</button>
-            <button class="chiffre"onclick="ajout('6')">6</button>
-            <button class="operation" onclick="ajout('-')">-</button>
+            <button class="chiffre"onclick="appendNumber('4')">4</button>
+            <button class="chiffre"onclick="appendNumber('5')">5</button>
+            <button class="chiffre"onclick="appendNumber('6')">6</button>
+            <button class="operation" onclick="setOperation('-')">-</button>
 
-            <button class="chiffre"onclick="ajout('1')">1</button>
-            <button class="chiffre"onclick="ajout('2')">2</button>
-            <button class="chiffre"onclick="ajout('3')">3</button>
-            <button class="operation" onclick="ajout('+')">+</button>
+            <button class="chiffre"onclick="appendNumber('1')">1</button>
+            <button class="chiffre"onclick="appendNumber('2')">2</button>
+            <button class="chiffre"onclick="appendNumber('3')">3</button>
+            <button class="operation" onclick="setOperation('+')">+</button>
 
-            <button class="chiffre" onclick="ajout('00')">00</button>
-            <button class="chiffre" onclick="ajout('0')">0</button>
-            <button class="operation" onclick="ajout('.')">.</button>
-            <button class="operation" onclick="ajout('=')">=</button>
+            <button class="chiffre" onclick="appendNumber('00')">00</button>
+            <button class="chiffre" onclick="appendNumber('0')">0</button>
+            <button class="operation" onclick="appendNumber('.')">.</button>
+            <button class="operation" onclick="calculate('=')" id="calc-display">=</button>
         </div>
     </div>
 
@@ -47,3 +47,4 @@
 </body>
 
 </html>
+

@@ -11913,7 +11913,7 @@ body {
   color: #e17e05;
 }
 
-#champ {
+.champ {
   background-color: #323131;
   color: white;
   border: none;
