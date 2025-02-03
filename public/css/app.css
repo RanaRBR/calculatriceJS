@@ -11861,6 +11861,7 @@ body {
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   width: 600px;
+  height: 550px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -11913,7 +11914,7 @@ body {
 }
 
 #champ {
-  background-color: #eeaf85;
+  background-color: #323131;
   color: white;
   border: none;
   border-radius: 10px;
@@ -11921,7 +11922,7 @@ body {
   font-size: 2rem;
   text-align: right;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(106, 84, 59, 0.942);
 }
 
 button {
