@@ -1,0 +1,79 @@
+body
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 100vh
+    margin: 0
+    background-color: #121212
+    font-family: 'Segoe UI, sans-serif'
+
+.tout
+    background-color: $dark
+    border-radius: 20px
+    padding: 20px
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+    width: 600px
+    margin-top: 5%
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+.grande
+    width: 38%
+    height: 38%
+    background-color: $grayDark
+    border-radius: 12px
+    padding: 20px
+    margin-bottom: 20px
+    text-align: right
+    min-height: 80px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    margin-bottom: 5%
+    margin-top: 5%
+
+.chiffre
+    color: white
+
+.operation
+    color: $orange
+    background: $dark
+    color: white
+
+.orange
+    color: $orange
+
+button
+    width: 120px
+    background-color: $dark
+    color: $grayDark
+    color: white
+    border-radius: 20px
+    padding: 20px
+    // box-shadow: 0 10px 30px rgb(196, 166, 139)
+    text-align: center
+    font-size: 1.5rem
+    border: none
+    cursor: pointer
+    transition: background-color 0.3s, transform 0.1s
+    margin: 5px
+    animation: shadow-move 5.5s infinite
+
+    &:hover
+        background-color: darken($dark, 10%)
+
+    &:active
+        transform: scale(0.90)
+
+@keyframes shadow-move
+    0%
+        box-shadow: 0 4px 10px rgba(126, 105, 76, 0.5)
+
+    50%
+        box-shadow: 0 8px 20px rgba(81, 78, 76, 0.5)
+
+    100%
+        box-shadow: 0 4px 10px rgba(116, 120, 119, 0.5)
