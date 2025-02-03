@@ -18,7 +18,7 @@
             <button class="orange" onclick="clearDisplay()">C</button>
             <button><i class="bi bi-backspace orange" onclick="suppressionDernier('')"></i></button>
             <button class="operation"onclick="setOperation('/')">/</button>
-            <button class="operation"onclick="setOperation('%')">%</button>
+            <button class="operation"onclick="appendNumber('.')">.</button>
 
 
             <button class="chiffre" onclick="appendNumber('7')">7</button>
@@ -38,8 +38,7 @@
 
             <button class="chiffre" onclick="appendNumber('00')">00</button>
             <button class="chiffre" onclick="appendNumber('0')">0</button>
-            <button class="operation" onclick="appendNumber('.')">.</button>
-            <button class="operation" onclick="calculate('=')" id="calc-display">=</button>
+            <button class="operation egal" onclick="calculate('=')" id="calc-display">=</button>
         </div>
     </div>
 
